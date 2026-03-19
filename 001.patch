@@ -1,0 +1,17 @@
+--- a/drivers/media/platform/rockchip/hdmirx/rk_hdmirx.c
++++ b/drivers/media/platform/rockchip/hdmirx/rk_hdmirx.c
+@@ -1697,10 +1697,10 @@
+ 	}
+ 
+ 	if (i == WAIT_SIGNAL_LOCK_TIME) {
+-		v4l2_err(v4l2_dev, "%s signal not lock, tmds_clk_ratio:%d\n",
+-				__func__, hdmirx_dev->tmds_clk_ratio);
+-		v4l2_err(v4l2_dev, "%s mu_st:%#x, scdc_st:%#x, dma_st10:%#x\n",
+-				__func__, mu_status, scdc_status, dma_st10);
++		//v4l2_err(v4l2_dev, "%s signal not lock, tmds_clk_ratio:%d\n",
++		//		__func__, hdmirx_dev->tmds_clk_ratio);
++		//v4l2_err(v4l2_dev, "%s mu_st:%#x, scdc_st:%#x, dma_st10:%#x\n",
++		//		__func__, mu_status, scdc_status, dma_st10);
+ 
+ 		return -1;
+ 	}
